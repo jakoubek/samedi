@@ -42,9 +42,9 @@
         <ul class="nav" id="main-menu-left">
 
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Auftragsabwicklung <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">@lang('Rm.title') <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li>{{ link_to_action('HomeController@index', 'Info') }}</li>
+              <li>{{ link_to_action('AccountController@index', Lang::get('Rm.accounts_all')) }}</li>
             </ul>
           </li>
 
