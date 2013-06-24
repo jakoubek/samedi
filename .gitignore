@@ -1,0 +1,6 @@
+/app/database/production.sqlite
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.DS_Store
