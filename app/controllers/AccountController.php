@@ -9,7 +9,8 @@ class AccountController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('accounts.index');
+		$accounts = Account::get();
+		return View::make('accounts.index')->with('accounts', $accounts);
 	}
 
 	/**
@@ -40,7 +41,10 @@ class AccountController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$account = Account::find($id);
+		if ($account) {
+			return View::make('accounts.show')->with('account', $account);
+		}
 	}
 
 	/**

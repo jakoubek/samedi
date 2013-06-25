@@ -11,10 +11,23 @@
 
 @section('content')
 
-<ul>
-    <li>eins</li>
-    <li>zwei</li>
-    <li>drei</li>
-</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Typ</th>
+            <th>Account</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach ($accounts as $account)
+        <tr>
+            <td>{{ $account->id }}</td>
+            <td>{{ $account->type }}</td>
+            <td>{{ link_to_action('AccountController@show', $account, $account->id) }}</td>
+        </tr>
+@endforeach
+    </tbody>
+</table>
 
 @endsection
