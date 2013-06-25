@@ -42,6 +42,10 @@
             <td>@lang('base.info_database_size')</td>
             <td>{{ $sysinfo->database_size }}</td>
         </tr>
+        <tr>
+            <td>@lang('base.info_database_mtime')</td>
+            <td>{{ $sysinfo->database_mtime }}</td>
+        </tr>
     </tbody>
 </table>
 

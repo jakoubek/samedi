@@ -10,6 +10,7 @@ return array(
     'info_version_date'    => 'Datum',
     'info_database_path'   => 'Pfad',
     'info_database_size'   => 'Größe',
+    'info_database_mtime'  => 'Letzte Änderung',
     'info_table_name'      => 'Tabelle',
     'info_table_records'   => 'Datensätze',
 
