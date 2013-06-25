@@ -45,4 +45,21 @@
     </tbody>
 </table>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th>@lang('base.info_table_name')</th>
+            <th>@lang('base.info_table_records')</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach ($sysinfo->table_info as $table)
+        <tr>
+            <td>{{ $table['name'] }}</td>
+            <td>{{ $table['number_of_records'] }}</td>
+        </tr>
+@endforeach
+    </tbody>
+</table>
+
 @endsection
