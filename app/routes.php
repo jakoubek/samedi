@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/info', 'HomeController@info');
 
 Route::resource('accounts', 'AccountController');
 

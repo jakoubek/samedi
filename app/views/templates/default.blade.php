@@ -68,7 +68,7 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li>{{ link_to_action('HomeController@index', 'Info') }}</li>
+              <li>{{ link_to_action('HomeController@info', Lang::get('base.info')) }}</li>
               <li>{{ link_to_action('HomeController@index', 'Support-Informationen') }}</li>
             </ul>
           </li>
