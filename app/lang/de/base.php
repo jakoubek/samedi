@@ -2,7 +2,7 @@
 
 return array(
 
-    'appname' => 'Project Samedi',
+    'appname'              => 'Project Samedi',
 
     'info'                 => 'Systeminformationen',
     'info_version_module'  => 'Modul',
